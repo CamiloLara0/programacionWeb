@@ -1,0 +1,17 @@
+body {
+  background-color: #f5f6f8;
+  color: #212529;
+}
+
+.card {
+  border: 1px solid #e3e5e8;
+}
+
+.table th {
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.table td {
+  font-size: 0.92rem;
+}
