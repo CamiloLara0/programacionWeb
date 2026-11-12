@@ -1,0 +1,24 @@
+{
+  "solicitudes": [
+    {
+      "id": 1,
+      "cliente": "María Fernanda López",
+      "telefono": "3001234567",
+      "tipoEvento": "Boda",
+      "fecha": "2026-12-12",
+      "invitados": 120,
+      "presupuesto": 18000000,
+      "estado": "Pendiente"
+    },
+    {
+      "id": 2,
+      "cliente": "Andrés Ramírez",
+      "telefono": "3107654321",
+      "tipoEvento": "Evento empresarial",
+      "fecha": "2026-12-20",
+      "invitados": 80,
+      "presupuesto": 9500000,
+      "estado": "En cotización"
+    }
+  ]
+}
