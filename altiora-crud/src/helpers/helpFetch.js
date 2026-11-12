@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/solicitudes";
+const API_URL = "/api/solicitudes";
 
 // Helper reutilizable para centralizar las peticiones HTTP.
 export async function helpFetch(endpoint = "", options = {}) {
