@@ -1,0 +1,30 @@
+name: Altiora CRUD - Build
+
+on:
+  push:
+    paths:
+      - "altiora-crud/**"
+      - ".github/workflows/altiora-build.yml"
+  pull_request:
+    paths:
+      - "altiora-crud/**"
+      - ".github/workflows/altiora-build.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: altiora-crud
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Instalar dependencias
+        run: npm install
+      - name: Compilar React
+        run: npm run build
